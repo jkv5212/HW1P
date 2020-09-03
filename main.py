@@ -34,10 +34,10 @@ def letter_grade(grade):
 for x in range(1, 4):
   letter = input(f"Enter your course {x} letter grade: ")
   cred = input(f"Enter your course {x} credit: ")
-  totCred = totCred + int(cred)
+  totCred = totCred + float(cred)
   lGrade = letter_grade(letter)
-  acc = acc + lGrade * int(cred)
-  print(f"Grade point for course {x}: {lGrade}")
+  acc = acc + lGrade * float(cred)
+  print(f"Grade point for course {x} is: {float(lGrade)}")
 
 print("Your GPA is " + str(acc/totCred))
 
