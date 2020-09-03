@@ -39,5 +39,5 @@ for x in range(1, 4):
   acc = acc + lGrade * float(cred)
   print(f"Grade point for course {x} is: {float(lGrade)}")
 
-print("Your GPA is: " +  str(acc/totCred))
+print(f"Your GPA is: {acc/totCred}")
 
